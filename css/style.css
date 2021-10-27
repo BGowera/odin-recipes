@@ -1,15 +1,17 @@
 *{
-    background-color:#4bb48b ;
+    background-color:#51ae9f ;
     color:white;
     font-family: 'Cairo', sans-serif;
     font-size:20px;
 }
 
-
-
-
-
-
+h1{
+    font-size:35px;
+    font-weight:800;
+    display:flex;
+    justify-content:center ;
+    text-decoration: underline;
+}
 
 
 
