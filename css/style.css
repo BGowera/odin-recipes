@@ -3,19 +3,41 @@
     color:white;
     font-family: 'Cairo', sans-serif;
     font-size:20px;
+    
    
 }
 
+body{
+    
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    height:100vh;
+    width:100vw;
+    
+}
+/* #74BEB2; */
 h1{
+     margin:0;
+    
+    /* box-sizing: border-box; */
     font-size:35px;
     font-weight:800;
     display:flex;
     justify-content:center ;
     text-decoration: underline;
+    background-color: #D52A72;
+    /* color:#D52A72; */
+     box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%);
+
 }
 
 .collage{
+    margin-top:20px;
     background-color: white;
+    box-shadow:0 2px 2px hsl(0, 5%, 5%), 0 2px 2px hsl(0, 20%, 30%),0 2px 2px black, 0 2px 2px hsl(0, 20%, 30%);
     width:340px;
     height:auto;
     display:flex;
@@ -28,17 +50,17 @@ h1{
 
 .borders{
     border-radius: 40px;
+    box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%);
 }
 .collage a{
 background-color: white;
 }
 
-
-
 .picture-box{
     
     display:flex;
 justify-content: center;
+
 }
 
 .collage img{
@@ -52,6 +74,16 @@ a{
     color:blue;
 }
 
+a:hover{
+    text-decoration: underline;
+    color:#D52A72;
+}
+
+a:active{
+    color:blue;
+    
+}
+
 .list-box{
     display:flex;
     justify-content:center
@@ -62,6 +94,7 @@ a{
     height:auto;
     border: 2px solid black;
     border-radius: 40px;
+    box-shadow:0 2px 2px hsl(0, 5%, 5%), 0 2px 2px hsl(0, 20%, 30%),0 2px 2px black, 0 2px 2px hsl(0, 20%, 30%);
 background-color: white;
 color:black;
 
@@ -74,7 +107,12 @@ color:black;
     color:black;
     background-color: white;
     list-style:circle black;
-    border-radius: 40px;
+     border-radius: 40px; 
+     /* box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%); */
+
+}
+.item{
+    box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%);
 
 }
 
@@ -85,3 +123,20 @@ color:black;
      text-decoration: underline;
      color:palevioletred;
  }
+
+ h3{
+     font-size:30px;
+font-weight:900;
+margin:0;
+padding:0;
+ }
+
+ input[type="text"], textarea {
+     width:400px;
+     background-color: white;
+    color:gray}
+    
+    button{
+        box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%);
+    
+    }
