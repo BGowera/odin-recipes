@@ -11,6 +11,7 @@ body{
     
     display:flex; 
   flex-direction: column;
+ 
     margin: 0;
     padding:0;
     /* box-sizing: border-box; */
@@ -46,7 +47,7 @@ h2{
 p{
     margin:20px;
 }
-.collage, .salad{
+.intro-image{
     margin-top:20px;
     background-color: white;
     box-shadow:0 2px 2px hsl(0, 5%, 5%), 0 2px 2px hsl(0, 20%, 30%),0 2px 2px black, 0 2px 2px hsl(0, 20%, 30%);
@@ -60,11 +61,13 @@ p{
     border-radius: 40px;
 }
 
+
+
 .borders{
     border-radius: 40px;
     box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%);
 }
-.collage a, .salad a{
+.intro-image a{
 background-color: white;
 }
 
@@ -75,7 +78,7 @@ justify-content: center;
 
 }
 
-.collage img, .salad img{
+.intro-image img{
     width: 300px;
     height:auto;
 
@@ -158,6 +161,54 @@ background-color: white;
     margin:0;
 }
 
+@import "bourbon";
+
+$border: solid 1px #fff;
+
+.rating_scale {
+  display: block;
+  text-align: center;
+  font-size: 0;
+  
+  & span {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: .3em .8em;
+    font-size: 26px;
+    font-weight:100;
+    width:4em;
+    background: #0f99d6;
+    color: #eee;
+    
+    border-top: $border;
+    border-bottom: $border;
+    border-right: $border;
+  }
+  
+  & label:first-child span {
+    border-left: $border;
+    border-top-left-radius: 0.25em;
+    border-bottom-left-radius: 0.25em;
+  }
+  
+  & label:last-child span {
+    border-top-right-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+  }
+  
+  & input[type="radio"] {
+    display: none;
+    
+
+ }
+  }
+ 
+}
+
+html, body {
+  background: #eee;
+}
+
  h3{
      font-size:30px;
 font-weight:900;
@@ -168,13 +219,14 @@ padding:0;
 
 
  input[type="text"], textarea {
+     height:40px;
      width:400px;
      background-color: white;
     color:gray}
     
     button{
         box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%);
-    
+    height:45px;
     }
 
 button:hover{
@@ -193,4 +245,9 @@ button:hover{
         
     }
 
-    
+    footer{
+
+        margin-top: auto;
+        
+        
+    }
