@@ -24,7 +24,7 @@ body{
 
 h1{
      margin:0;
-    
+    padding:15px;
    
     font-size:35px;
     font-weight:800;
@@ -37,10 +37,16 @@ h1{
      
 }
 
+h2{
+    text-transform: capitalize;
+    font-size:32px;
+    font-weight:900;
+}
+
 p{
     margin:20px;
 }
-.collage{
+.collage, .salad{
     margin-top:20px;
     background-color: white;
     box-shadow:0 2px 2px hsl(0, 5%, 5%), 0 2px 2px hsl(0, 20%, 30%),0 2px 2px black, 0 2px 2px hsl(0, 20%, 30%);
@@ -58,7 +64,7 @@ p{
     border-radius: 40px;
     box-shadow:0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%),0 5px 10px black, 0 5px 6px hsl(0, 20%, 30%);
 }
-.collage a{
+.collage a, .salad a{
 background-color: white;
 }
 
@@ -69,7 +75,7 @@ justify-content: center;
 
 }
 
-.collage img{
+.collage img, .salad img{
     width: 300px;
     height:auto;
 
@@ -95,7 +101,7 @@ a:active{
     justify-content:center
 }
 
-.list{
+.list, .ingredients, .steps{
     width:380px;
     height:auto;
     border: 2px solid black;
@@ -105,11 +111,18 @@ background-color: white;
 
 }
 
-.list a{
+.list a, .ingredients ul, .steps ol{
     color:black;
     background-color: white;
     
+    
 } 
+
+.ingredients, .steps{
+    margin:40px 20px 40px 0px;
+    width:600px;
+    
+}
 
 .container{
   
@@ -118,7 +131,7 @@ background-color: white;
     
 }
 
-.list ul{
+.list ul, .ingredients ul, .steps ol{
     background-color: white;
     border-radius: 40px;
     border-radius: 40px; 
@@ -179,3 +192,5 @@ button:hover{
         100%{transform: scale(1); background-color: #DD558E;}
         
     }
+
+    
