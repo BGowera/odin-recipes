@@ -10,15 +10,11 @@ html{
 }
 
 img{
+    display:block;
     max-width: 100%;
 }
 
-.dex-head{
-    position:relative;
-    height:100vh;
-background:#181313;
-}
-
+/* stuff that appears on every page */
 .body-wrapper{
     display: flex;
     flex-direction: column;
@@ -26,55 +22,21 @@ background:#181313;
     margin: 0 auto;
 }
 
-.dex-head{
-    content:"";
-    position: absolute;
-    top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
- background-image: url(/img/White\ Box\ Modern\ Potluck\ Night\ Themed\ Party\ Photo\ Collage.png),radial-gradient(black,grey);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity:0.35;
-}
 
-.salad-head{
-       position:relative;
-    height:100vh;
-background:#181313;
-}
 
-.salad-head::before{
-    content:"";
-    position: absolute;
-    top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
- background-image: url(/img/salad.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity:0.35;
-}
-
-.flashy
-{
-text-align: center;;
-    margin-top: 50%;
+.flashy{
+    position: relative;
+text-align: center;
+    margin-top: 50vh;
     text-transform: uppercase;
 color: #ffffff;
-
-    font-size:8em;
+    font-size: 11vw;
     font-weight: 800;
-    
-    position: relative;
+
     font-family: 'Dancing Script', cursive; 
 }
+
+
 
 #navbar{
    
@@ -89,7 +51,6 @@ color: #ffffff;
 }
 
 
-
 .nav-link{
     text-decoration: none;
     color:rgb(209, 207, 207);
@@ -100,30 +61,6 @@ color: #ffffff;
     text-decoration: underline;
 }
 
-.recipe-div{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    padding:2em;
-    gap:2em;
-    text-align: center;
-    justify-content: center;
-}
-
-.rectile{
-    padding:.5em;
-    border:1px solid rgb(131, 131, 131);
-    width:300px;
-border-radius: 20px;
-}
-.rectile:hover{
-    transform: scale(1.05)
-}
-
-
-.tile-img{
-  border-radius: 20px;  
-}
 
 #main{
      position:relative;
@@ -146,10 +83,11 @@ background:#181313;
     opacity:0.15;
 }
 
-#footer{
+.footer{
     position: relative;
     margin-top: auto;
     text-align: center;
+  
     font-size:1.8em;
     padding: 1em 2em;
     background-color: rgb(61, 61, 61, 0.75) ;
@@ -157,26 +95,85 @@ background:#181313;
 }
 
 
-#intro{
-    position: relative;
-    
+h3{
+    font-size: 2em;
 }
 
-.intro-img{
-   width:300px;
-   margin-top: 20px;
-   margin-left: 20px;
-   
-
-}
-
-#intro{
-    margin-top:20px;
-}
 p{
     font-size: 1.8em;
     color: #e4e0e0;
     margin-top: 5px;
+}
+
+/* universal styling ends here */
+
+/* homepage-specific styling */
+
+.dex-head{
+    position:relative;
+    height:100vh;
+background:#181313;
+}
+
+.dex-head::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+ background-image: url(/img/White\ Box\ Modern\ Potluck\ Night\ Themed\ Party\ Photo\ Collage.png),radial-gradient(black,grey);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity:0.35;
+}
+
+
+.recipe-div{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding:2em;
+    gap:2em;
+    text-align: center;
+    justify-content: center;
+}
+
+.rectile{
+    
+    border:5px solid rgb(131, 131, 131);
+    width:300px;
+border-radius: 20px;
+}
+
+.rectile:hover{
+    transform: scale(1.05)
+}
+
+.tile-img{
+  border-radius: 10px;  
+}
+
+/* homepage-specific styling ends here */
+
+/* styling universal to recipe pages */
+#intro{
+    position: relative;
+    padding:2em 3em;
+   
+    
+}
+
+.intro-img{
+   width:80vw;
+   margin: auto;
+   margin-top: 20px;
+}
+
+#intro{
+    margin-top:20px;
 }
 
 .skip-link{
@@ -191,25 +188,104 @@ p{
 }
 
 #recipe{
+    position: relative;
     margin-top: 30px;
+    padding:4em 2em;
+    display: flex;
+    gap:2em;
+    flex-direction: column;
 }
 
 .ingredients, .steps{
     background: white;
-    padding:1em 2em;
+    padding:4em 2em;
     border:2px double grey;
     border-radius: 20px;
    margin-top: 20px;
+   
    width:80%;
    margin:auto;
 }
 
 
-
-h3{
-    font-size: 2em;
-}
-
 .ing-list, .step-list{
     font-size: 1.6em;
+}
+
+/* recipe-universal styling ends here */
+
+
+/* salad-page-specific styling starts here */
+
+
+
+
+.salad-head{
+       position:relative;
+    height:100vh;
+background:#181313;
+}
+
+.salad-head::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+ background-image: url(/img/salad.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity:0.35;
+}
+
+/* salad styling ends here */
+
+/* steak-specific styling */
+.steak-head{
+    position:relative;
+    height:100vh;
+background:#181313;
+}
+
+.steak-head::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+ background-image: url(/img/steak.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity:0.35;
+}
+
+/* steak-styling ends here */
+
+/* dessert-specific styling */
+
+.cheese-head{
+    position:relative;
+    height:100vh;
+background:#181313;
+}
+
+.cheese-head::before{
+    content:"";
+    position: absolute;
+    top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+ background-image: url(/img/cheesecake.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity:0.35;
 }
