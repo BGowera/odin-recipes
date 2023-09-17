@@ -1,2 +1,1 @@
-# odin-recipes
-A simple recipe site made for the odin project
+Simple Recipe page made for the odin project
