@@ -3,17 +3,105 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="./img/HastyBites.svg" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="./img/HastyBites.svg"
+			type="image/x-icon"
+		/>
 		<title>HastyBites.com</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1>ODIN RECIPES</h1>
-		<img src="./img/Collage.png" alt="Restaurant Collage" />
-		<ul>
-			<li><a href="./recipes/starter">Starter</a></li>
-			<li><a href="./recipes/main">Main Course</a></li>
-			<li><a href="./recipes/dessert">Dessert</a></li>
-		</ul>
+		<header id="header">
+			<nav class="nav">
+				<img
+					src="./img/HastyBites.png"
+					alt="Hasty Bites logo"
+					class="logo"
+				/>
+				<ul class="navlinks">
+					<li>
+						<input
+							type="search"
+							name="Search"
+							id="Search"
+							placeholder="What Are YOu Looking For"
+						/>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<section class="hero">
+				<h1 class="hero-heading">Featured Recipes</h1>
+				<div class="hero-img">
+					<div class="hero-img-banner">
+						Microwave Kale and Chilli Eggs
+					</div>
+					<a href="./recipes/recipe_one.html" class="hero-img-link"
+						><img
+							src="./img/Eggs.webp"
+							alt="An image of microwave kale and chilli eggs"
+							class="hero-img"
+					/></a>
+				</div>
+				<div class="hero-img"></div>
+				<div class="hero-img"></div>
+				<div class="hero-img">
+					<div class="hero-img-banner">Air Fryer Chicken Breast</div>
+					<a href="./recipes/recipe_two.html" class="hero-img-link"
+						><img
+							src="./img/Chicken.webp"
+							alt="An image of airfryer chicken breast"
+							class="hero-img"
+					/></a>
+				</div>
+				<div class="hero-img">
+					<div class="hero-img-banner">Microwave Chocolate Fudge</div>
+					<a href="./recipes/recipe_three.html" class="hero-img-link"
+						><img
+							src="./img/Fudge.jpg"
+							alt="An image of chocolate fudge in a bowl"
+							class="hero-img"
+					/></a>
+				</div>
+				<div class="hero-img"></div>
+				<div class="hero-img"></div>
+			</section>
+			<section class="newsletter">
+				<h2 class="newsletter-heading">
+					Interested in More Quick Recipes?
+				</h2>
+				<p class="newsletter-preamble">
+					Get tips, tricks, and links to our featured recipes of the
+					day sent directly to your inbox when you subscribe to our
+					newsletter. No spam, we promise :).
+				</p>
+				<form action="#" class="newsletter-form">
+					<input type="text" class="newsletter-form-input" placeholder="you@example.com">
+					<button type="submit" class="newsletter-form-submit">Subscribe to Newsletter</button>
+				</form>
+			</section>
+			<footer class="footer">
+				<div class="footer-links">
+					<ul class="footer-links-list">
+						<li class="footer-links-list-item"><a href="#" class="footer-link">Contact</a></li>
+						<li class="footer-links-list-item"><a href="#" class="footer-link">Careers</a></li>
+						<li class="footer-links-list-item"><a href="#" class="footer-link">About</a></li>
+						<li class="footer-links-list-item"><a href="#" class="footer-link">FAQ</a></li>
+					</ul>
+				<a href="#" class="footer-link">Privacy Policy</a>
+				<div class="footer-social-links">
+					<ul class="footer-social-links">
+						<li class="footer-social-links-list-item"><a href="#" class="footer-link">Facebook</a></li>
+						<li class="footer-social-links-list-item"><a href="#" class="footer-link">Instagram</a></li>
+						<li class="footer-social-links-list-item"><a href="#" class="footer-link">Twitter/X</a></li>
+						<li class="footer-social-links-list-item"><a href="#" class="footer-link">Pinterest</a></li>
+					</ul>
+					<div class="copyright-notice">&copy;HastyBites.com 2024. All rights reserved</div>
+				</div>
+				</div>
+			</footer>
+		</main>
 	</body>
 </html>
